@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,66 +32,88 @@
             transform: translateY(30px);
             transition: all 0.8s ease-out;
         }
+
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .slide-in-left {
             opacity: 0;
             transform: translateX(-50px);
             transition: all 0.8s ease-out;
         }
+
         .slide-in-left.visible {
             opacity: 1;
             transform: translateX(0);
         }
+
         .slide-in-right {
             opacity: 0;
             transform: translateX(50px);
             transition: all 0.8s ease-out;
         }
+
         .slide-in-right.visible {
             opacity: 1;
             transform: translateX(0);
         }
+
         .hover-scale {
             transition: transform 0.3s ease;
         }
+
         .hover-scale:hover {
             transform: scale(1.05);
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #57697b 0%, #40B192 100%);
         }
+
         .pulse {
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.1);
             }
+
             100% {
                 transform: scale(1);
             }
         }
+
         .carousel {
             overflow: hidden;
             white-space: nowrap;
         }
+
         .carousel-track {
             display: inline-flex;
             animation: scroll 20s linear infinite;
         }
+
         .carousel-track:hover {
             animation-play-state: paused;
         }
+
         @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
+
         .logo-item {
             flex-shrink: 0;
             width: 120px;
@@ -101,12 +124,14 @@
             justify-content: center;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
         .logo-item:hover {
             transform: scale(1.1);
         }
+
         .logo-item img {
             max-width: 80px;
             max-height: 50px;
@@ -114,11 +139,13 @@
             filter: grayscale(100%);
             transition: filter 0.3s ease;
         }
+
         .logo-item:hover img {
             filter: grayscale(0%);
         }
     </style>
 </head>
+
 <body class="font-sans bg-neutral text-primary">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
@@ -147,19 +174,21 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="fade-in">
                     <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        Menos procesos manuales. 
+                        Menos procesos manuales.
                         <span class="text-accent"></span>
                         Más resultados.
                     </h1>
                     <p class="text-xl mb-8 text-white/90 leading-relaxed">
-                        Especialistas en implementación, personalización y optimización de Soluciones en IT. 
+                        Especialistas en implementación, personalización y optimización de Soluciones en IT.
                         Llevamos tu negocio al siguiente nivel con soluciones tecnológicas innovadoras.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold transition-all hover-scale">
+                        <button
+                            class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold transition-all hover-scale">
                             Solicitar Consulta Gratuita
                         </button>
-                        <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all">
+                        <button
+                            class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all">
                             Ver Nuestros Servicios
                         </button>
                     </div>
@@ -199,7 +228,7 @@
                     Ofrecemos soluciones completas para maximizar el potencial de tu Empresa
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-light-gray/30 p-8 rounded-xl hover-scale fade-in">
                     <div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
@@ -207,13 +236,16 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Personalización de reportes</h3>
                     <p class="text-gray-600 mb-4">
-                        Adaptamos tu sistema para que obtengas información clara, precisa y accionable, alineada a las necesidades de tu negocio.
+                        Adaptamos tu sistema para que obtengas información clara, precisa y accionable, alineada a las
+                        necesidades de tu negocio.
 
                     </p>
                     <ul class="text-sm text-gray-500 space-y-1">
                         <li>• Transformamos datos dispersos en reportes y dashboards que realmente aportan valor</li>
-                        <li>• Creación y ajuste de estructuras de información para reportes más consistentes y útiles</li>
-                        <li>• Construcción de reportes detallados, KPIs, visualizaciones interactivas y paneles ejecutivos</li>
+                        <li>• Creación y ajuste de estructuras de información para reportes más consistentes y útiles
+                        </li>
+                        <li>• Construcción de reportes detallados, KPIs, visualizaciones interactivas y paneles
+                            ejecutivos</li>
                     </ul>
                 </div>
 
@@ -223,7 +255,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Desarrollo de Scripts y Herramientas Personalizadas</h3>
                     <p class="text-gray-600 mb-4">
-                        Creamos soluciones avanzadas a medida mediante scripting, integraciones y automatización inteligente.
+                        Creamos soluciones avanzadas a medida mediante scripting, integraciones y automatización
+                        inteligente.
                     </p>
                     <ul class="text-sm text-gray-500 space-y-1">
                         <li>• Scripts de automatización</li>
@@ -254,7 +287,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Análisis y Optimización</h3>
                     <p class="text-gray-600 mb-4">
-                        Análisis profundo de tu sistema actual y optimización para mejorar el rendimiento y la eficiencia.
+                        Análisis profundo de tu sistema actual y optimización para mejorar el rendimiento y la
+                        eficiencia.
                     </p>
                     <ul class="text-sm text-gray-500 space-y-1">
                         <li>• Auditoría de sistema</li>
@@ -303,10 +337,11 @@
                 <div class="slide-in-left">
                     <h2 class="text-4xl font-bold text-primary mb-6">Expertos en desarrollo e implementación</h2>
                     <p class="text-lg text-gray-600 mb-6">
-                        Somos especialistas en implementar, optimizar y escalar sistemas empresariales que mejoran la eficiencia, reducen tiempos operativos y potencian la toma de decisiones.
+                        Somos especialistas en implementar, optimizar y escalar sistemas empresariales que mejoran la
+                        eficiencia, reducen tiempos operativos y potencian la toma de decisiones.
                     </p>
                     <p class="text-gray-600 mb-8">
-                        Nuestro enfoque se centra en entender las necesidades específicas de cada cliente para 
+                        Nuestro enfoque se centra en entender las necesidades específicas de cada cliente para
                         desarrollar soluciones personalizadas que generen valor real y mejoren la eficiencia operativa.
                     </p>
                     <div class="grid grid-cols-2 gap-6">
@@ -333,30 +368,36 @@
                         <h3 class="text-2xl font-semibold text-primary mb-6">¿Por qué elegirnos?</h3>
                         <div class="space-y-4">
                             <div class="flex items-start space-x-4">
-                                <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <div
+                                    class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <i class="fas fa-check text-accent text-sm"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-primary">Experiencia Comprobada</h4>
-                                    <p class="text-sm text-gray-600">Más de 100 proyectos exitosos en diversos sectores</p>
+                                    <p class="text-sm text-gray-600">Más de 100 proyectos exitosos en diversos sectores
+                                    </p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-4">
-                                <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <div
+                                    class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <i class="fas fa-check text-accent text-sm"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-primary">Enfoque Personalizado</h4>
-                                    <p class="text-sm text-gray-600">Soluciones adaptadas a las necesidades específicas de tu negocio</p>
+                                    <p class="text-sm text-gray-600">Soluciones adaptadas a las necesidades específicas
+                                        de tu negocio</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-4">
-                                <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <div
+                                    class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <i class="fas fa-check text-accent text-sm"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-primary">Soporte Continuo</h4>
-                                    <p class="text-sm text-gray-600">Acompañamiento post-implementación y mejora continua</p>
+                                    <p class="text-sm text-gray-600">Acompañamiento post-implementación y mejora
+                                        continua</p>
                                 </div>
                             </div>
                         </div>
@@ -375,7 +416,7 @@
                     Transformamos tu inversión en NetSuite en resultados tangibles para tu negocio
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center fade-in">
                     <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -393,7 +434,8 @@
                     </div>
                     <h3 class="text-xl font-semibold text-primary mb-4">Amplia Experiencia</h3>
                     <p class="text-gray-600">
-                        Hemos trabajado con más de 80 empresas , retail, manufactura, mayoristas, salud, startups,  y más.
+                        Hemos trabajado con más de 80 empresas , retail, manufactura, mayoristas, salud, startups, y
+                        más.
                     </p>
                 </div>
 
@@ -413,7 +455,7 @@
                     </div>
                     <h3 class="text-xl font-semibold text-primary mb-4">Soporte </h3>
                     <p class="text-gray-600">
-                        Equipo de soporte técnico disponible  para resolver cualquier inconveniente.
+                        Equipo de soporte técnico disponible para resolver cualquier inconveniente.
                     </p>
                 </div>
             </div>
@@ -426,17 +468,20 @@
             <div class="text-center mb-16 fade-in">
                 <h2 class="text-4xl font-bold text-primary mb-4">Casos de Éxito</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Conoce algunos de nuestros proyectos más destacados y los resultados obtenidos
+                    Algunos de nuestros proyectos más destacados y los resultados obtenidos
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://www.efficientix.com/hubfs/Imagenes%20Web/Inicio/Oracle%20NetSuite%20Partner%20-%20Efficientix.webp')"></div>
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYS_zMQ0F-vwQ95E-oOwK3mutwX1E8oaQRw&s')">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-primary mb-3">Automatización de Procesos </h3>
                         <p class="text-gray-600 mb-4">
-                            Implementación de workflows automatizados que reducen el tiempo de procesamiento en un 70%.
+                            Implementación de workflows automatizados que reducen el tiempo de procesamiento en un 70%
+                            desarrollados en N8N o Python.
                         </p>
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-accent font-semibold"> </span>
@@ -446,29 +491,88 @@
                 </div>
 
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://hellomidia.com.br/wp-content/uploads/2024/07/dashboard-google-ads.jpeg')"></div>
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://hellomidia.com.br/wp-content/uploads/2024/07/dashboard-google-ads.jpeg')">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-primary mb-3">Dashboard Ejecutivos Personalizados</h3>
                         <p class="text-gray-600 mb-4">
-                            Desarrollo de reportes en tiempo real que mejoraron la toma de decisiones estratégicas.
+                            Desarrollo de reportes en tiempo real que mejoraron la toma de decisiones estratégicas
+                            diseñados en Power BI o looker studio.
                         </p>
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-accent font-semibold"> </span>
-                            <span class="text-sm text-gray-500">  </span>
+                            <span class="text-sm text-gray-500"> </span>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://salbologistics.com/wp-content/uploads/elementor/thumbs/blog_cadena-qqi8np5ol100xca38zzn1g3f99oo42yjae3sy2luo8.jpg')"></div>
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://i.sstatic.net/jONN4.png')"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-primary mb-3">Optimización de Scripts</h3>
                         <p class="text-gray-600 mb-4">
-                            Scripts optimizados consumen menos recursos, evitando cuellos de botella en la plataforma y mejorando el rendimiento general.
+                            Scripts optimizados consumen menos recursos, evitando cuellos de botella en la plataforma y
+                            mejorando el rendimiento general.
                         </p>
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-accent font-semibold"> </span>
-                            <span class="text-sm text-gray-500">  </span>
+                            <span class="text-sm text-gray-500"> </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- New Row of Cards -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WPSCYVZDRZF4FGD6E4ZQFFZWVM.jpg')">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Desarrollo de Chatbots </h3>
+                        <p class="text-gray-600 mb-4">
+                            Desarrollamos chatbots para plataformas como Telegram y WhatsApp. para atencion al cliente y
+                            soporte técnico, para tomar pedidos o hacer reservas.
+
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-accent font-semibold"> </span>
+                            <span class="text-sm text-gray-500"> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Migración de Datos</h3>
+                        <p class="text-gray-600 mb-4">
+                            Transición segura de sistemas legacy a la nube, asegurando integridad y disponibilidad de la
+                            información.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-accent font-semibold"> </span>
+                            <span class="text-sm text-gray-500"> </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale fade-in">
+                    <div class="h-48 bg-cover bg-center"
+                        style="background-image: url('https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2022/10/ESP32-Getting-Started.jpg?resize=1024%2C576&quality=100&strip=all&ssl=1')">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Interfaces ESP32</h3>
+                        <p class="text-gray-600 mb-4">
+                            Desarrollamos interfaces para ESP32 para controlar dispositivos como sirenas, luces,
+                            sensores de agua y gas.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-accent font-semibold"> </span>
+                            <span class="text-sm text-gray-500"> </span>
                         </div>
                     </div>
                 </div>
@@ -485,7 +589,7 @@
                     Complementamos tu experiencia NetSuite con servicios tecnológicos integrales
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center p-6 bg-light-gray/20 rounded-xl hover-scale fade-in">
                     <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -513,7 +617,8 @@
                     </div>
                     <h3 class="text-lg font-semibold text-primary mb-3">Chat bots</h3>
                     <p class="text-gray-600 text-sm">
-                        Chatbtots que atienden tu negocio 24/7, captura automaticamente informacion relevante de tu cliente de whatsapp a una base de datos.
+                        Chatbtots que atienden tu negocio 24/7, captura automaticamente informacion relevante de tu
+                        cliente de whatsapp a una base de datos.
                     </p>
                 </div>
 
@@ -523,11 +628,12 @@
                     </div>
                     <h3 class="text-lg font-semibold text-primary mb-3">Scripts en ESP32</h3>
                     <p class="text-gray-600 text-sm">
-                        Creamos sistemas embebidos personalizados que permiten automatizar procesos, monitorear variables en tiempo real y conectar dispositivos físicos a plataformas en la nube.
+                        Creamos sistemas embebidos personalizados que permiten automatizar procesos, monitorear
+                        variables en tiempo real y conectar dispositivos físicos a plataformas en la nube.
                     </p>
                 </div>
             </div>
-            
+
             <!-- Technology Carousel -->
             <div class="mt-16 fade-in">
                 <h3 class="text-2xl font-semibold text-primary text-center mb-8">Tecnologías que Dominamos</h3>
@@ -535,65 +641,82 @@
                     <div class="carousel-track">
                         <!-- Logos duplicados para efecto infinito -->
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                                alt="Oracle">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="Microsoft SQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                alt="Microsoft SQL">
                         </div>
                         <div class="logo-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5">
                         </div>
                         <div class="logo-item">
-                            <img src="https://seeklogo.com/images/G/google-looker-logo-B27BD25E4E-seeklogo.com.png" alt="Looker Studio">
+                            <img src="https://seeklogo.com/images/G/google-looker-logo-B27BD25E4E-seeklogo.com.png"
+                                alt="Looker Studio">
                         </div>
                         <div class="logo-item">
                             <img src="https://cdn.worldvectorlogo.com/logos/espressif-systems.svg" alt="Excel">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
                         </div>
                         <div class="logo-item">
-                            <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png" alt="n8n">
+                            <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
+                                alt="n8n">
                         </div>
                         <!-- Duplicados para efecto infinito -->
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                                alt="Oracle">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="Microsoft SQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                alt="Microsoft SQL">
                         </div>
                         <div class="logo-item">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5">
                         </div>
                         <div class="logo-item">
-                            <img src="https://seeklogo.com/images/G/google-looker-logo-B27BD25E4E-seeklogo.com.png" alt="Looker Studio">
+                            <img src="https://seeklogo.com/images/G/google-looker-logo-B27BD25E4E-seeklogo.com.png"
+                                alt="Looker Studio">
                         </div>
                         <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+                                alt="Excel">
                         </div>
                         <div class="logo-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
                         </div>
                         <div class="logo-item">
-                            <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png" alt="n8n">
+                            <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
+                                alt="n8n">
                         </div>
                     </div>
                 </div>
@@ -610,7 +733,7 @@
                     Contáctanos hoy mismo y descubre cómo podemos llevar tu negocio al siguiente nivel
                 </p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="slide-in-left">
                     <div class="bg-white rounded-2xl p-8 shadow-lg">
@@ -619,28 +742,38 @@
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Nombre Completo</label>
-                                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Tu nombre">
+                                    <input type="text"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                                        placeholder="Tu nombre">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
-                                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="tu@email.com">
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Correo
+                                        Electrónico</label>
+                                    <input type="email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                                        placeholder="tu@email.com">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Empresa</label>
-                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Nombre de tu empresa">
+                                <input type="text"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                                    placeholder="Nombre de tu empresa">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                                <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                                <textarea rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                                    placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                             </div>
-                            <button type="submit" class="w-full bg-accent hover:bg-accent/90 text-white py-4 rounded-lg font-semibold transition-all hover-scale">
+                            <button type="submit"
+                                class="w-full bg-accent hover:bg-accent/90 text-white py-4 rounded-lg font-semibold transition-all hover-scale">
                                 Enviar Mensaje
                             </button>
                         </form>
                     </div>
                 </div>
-                
+
                 <div class="slide-in-right">
                     <div class="space-y-8">
                         <div>
@@ -675,13 +808,15 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="bg-white rounded-2xl p-8 shadow-lg">
                             <h4 class="text-xl font-semibold text-primary mb-4">¿Necesitas una Consulta Urgente?</h4>
                             <p class="text-gray-600 mb-6">
-                                Nuestro equipo de expertos está disponible para consultas de emergencia y soporte crítico.
+                                Nuestro equipo de expertos está disponible para consultas de emergencia y soporte
+                                crítico.
                             </p>
-                            <button class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-all">
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-all">
                                 Llamar Ahora: 55 3209 3342
                             </button>
                         </div>
@@ -698,21 +833,25 @@
                 <div>
                     <img src="images/logo.png" alt="NetSuite Logo" class="h-12 w-auto mb-4">
                     <p class="text-white/80 mb-4">
-                        Transformamos los DATOS en una ventaja competitiva con soluciones personalizadas y soporte experto.
+                        Transformamos los DATOS en una ventaja competitiva con soluciones personalizadas y soporte
+                        experto.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Servicios</h4>
                     <ul class="space-y-2 text-white/80">
@@ -722,7 +861,7 @@
                         <li><a href="#" class="hover:text-accent transition-colors">Integración de Sistemas</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Empresa</h4>
                     <ul class="space-y-2 text-white/80">
@@ -732,7 +871,7 @@
                         <li><a href="#" class="hover:text-accent transition-colors">Carreras</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Soporte</h4>
                     <ul class="space-y-2 text-white/80">
@@ -743,7 +882,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
                 <p>&copy; 2025 Devtrendmx. Todos los derechos reservados.</p>
             </div>
@@ -752,13 +891,14 @@
 
     <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://api.whatsapp.com/send/?phone=5532093342&text=Hola%2C+me+interesa+conocer+m%C3%A1s+sobre+sus+servicios+de+Programaci%C3%B3n&type=phone_number&app_absent=0" 
-           target="_blank" 
-           class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center pulse">
+        <a href="https://api.whatsapp.com/send/?phone=5532093342&text=Hola%2C+me+interesa+conocer+m%C3%A1s+sobre+sus+servicios+de+Programaci%C3%B3n&type=phone_number&app_absent=0"
+            target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center pulse">
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
